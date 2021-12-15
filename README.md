@@ -25,3 +25,17 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+### Create a live environment
+You will have to recreate the products, update the API routes and the Keys
+Create a CLIENT_URL .env entry with the actual live clienturl 
+Be sure to add the production or live keys from your live environment in your Vercel Acct
+
+Enable customer portal and update the details and the new products and give the actual URLs for the production terms and privacy etc. 
+
+Reset the webhooks and add the endpoint for vercel App
+
+choose the events to listen to as well (get new secrets and keys from the events)
+Add the stripe signing secret to the vercel env vars as well
+
+update the supabase users and urls as well 
